@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
-// import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-// import * as slides from '../data/DataProd';
 import Products from '../components/productions/Products';
 
 const Productions = ({ data }) => {

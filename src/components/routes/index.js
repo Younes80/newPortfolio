@@ -11,7 +11,6 @@ import Contact from '../../pages/Contact';
 import Home from '../../pages/Home';
 import Productions from '../../pages/Productions';
 import { AnimatePresence } from 'framer-motion';
-import LegalNotice from '../LegalNotice';
 
 const Routes = () => {
 	const location = useLocation();
@@ -69,7 +68,6 @@ const Routes = () => {
 				<Route path="/productions" component={Productions} />
 				<Route path="/aboutus" component={AboutUs} />
 				<Route path="/contact" component={Contact} />
-				<Route path="/legal-notice" component={LegalNotice} />
 				<Redirect to="/" />
 			</Switch>
 		</AnimatePresence>
