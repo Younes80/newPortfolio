@@ -1,0 +1,225 @@
+.container-offer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	@include xs {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include sm {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include md {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	h1 {
+		grid-area: title;
+		padding: 100px 0 100px 0;
+		@include xs {
+			padding: 100px 0 50px 0;
+		}
+		@include sm {
+			padding: 100px 0 50px 0;
+		}
+		@include md {
+			padding: 100px 0 50px 0;
+		}
+	}
+	.offers {
+		position: relative;
+		width: 800px;
+		margin: 0 auto;
+		cursor: pointer;
+		display: grid;
+		gap: 50px 20px;
+		grid:
+			'offer1' 1fr
+			/ auto;
+		justify-content: space-evenly;
+		padding: 0 15px;
+		@include xs {
+			width: initial;
+			margin: initial;
+			grid:
+				'offer1' auto
+				/ auto;
+		}
+		@include sm {
+			grid:
+				'offer1' auto
+				/ auto;
+		}
+		@include md {
+			grid:
+				'offer1' auto
+				/ auto;
+		}
+		.offer {
+			position: relative;
+			width: 800px;
+			overflow: hidden;
+			background-color: $color-5;
+			box-shadow: $shadow-full;
+			display: grid;
+			grid-template-columns: 60% auto;
+			grid-template-rows: auto auto 1fr;
+			gap: 0px 0px;
+			grid-template-areas:
+				'img title'
+				'img techno'
+				'img text';
+			align-items: center;
+			transition: all 0.5s;
+			@include xs {
+				width: initial;
+				max-width: 100%;
+				margin: 0 15px;
+				grid-template-columns: auto;
+				grid-template-areas:
+					'img'
+					'title'
+					'techno'
+					'text';
+				gap: 0px 0px;
+			}
+			@include sm {
+				width: initial;
+				max-width: 100%;
+				margin: 0 15px;
+				grid-template-columns: auto;
+				grid-template-areas:
+					'img'
+					'title'
+					'techno'
+					'text';
+				gap: 0px 0px;
+			}
+			@include md {
+				width: initial;
+				max-width: 100%;
+				margin: 0 15px;
+			}
+			&:hover {
+				transform: scale(1.02);
+			}
+			h2 {
+				grid-area: title;
+				text-align: center;
+				align-self: center;
+				padding-top: 25px;
+				padding-bottom: 0;
+				line-height: 30px;
+			}
+			.techno {
+				grid-area: techno;
+				text-align: center;
+				align-self: center;
+				font-style: italic;
+				font-size: 14px;
+				padding-left: 25px;
+				display: flex;
+				flex-direction: column;
+			}
+			img {
+				grid-area: img;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.description_projet {
+				grid-area: text;
+				display: flex;
+				flex-direction: column;
+				padding-left: 25px;
+				ul {
+					list-style: none;
+					padding-left: 15px;
+					position: relative;
+					li::before {
+						content: '\2022';
+						color: $color-2;
+						font-size: 25px;
+						display: inline-block;
+						width: 10px;
+						position: absolute;
+						left: -2%;
+					}
+				}
+			}
+		}
+
+		.offer1 {
+			grid-area: offer1;
+		}
+	}
+}
+
+.offer1 {
+	position: relative;
+	.svg {
+		background: $color-5;
+		box-shadow: $shadow;
+		border-radius: 50px;
+		border: none;
+		color: $color-2;
+		font-size: 5rem;
+		width: 5rem;
+		height: 5rem;
+		transition: opacity 0.3s;
+		opacity: 0.7;
+		z-index: 5;
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.slide[data-active] {
+	z-index: 2;
+}
+
+.slide-arrow-left {
+	left: -20%;
+	top: 40%;
+	position: absolute;
+	z-index: 500;
+	@include xs {
+		left: 0%;
+		top: 30%;
+	}
+	@include sm {
+		left: 30%;
+		top: 105%;
+	}
+	@include md {
+		left: 30%;
+		top: 105%;
+	}
+	@include lg {
+		left: -10%;
+	}
+}
+.slide-arrow-right {
+	right: -20%;
+	top: 40%;
+	position: absolute;
+	z-index: 500;
+	@include xs {
+		right: 0%;
+		top: 30%;
+	}
+	@include sm {
+		right: 30%;
+		top: 105%;
+	}
+	@include md {
+		right: 30%;
+		top: 105%;
+	}
+	@include lg {
+		right: -10%;
+	}
+}

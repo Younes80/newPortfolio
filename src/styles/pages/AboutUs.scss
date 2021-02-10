@@ -1,0 +1,43 @@
+.about-us {
+	height: 100vh;
+
+	@include xs {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include sm {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include md {
+		padding-bottom: 100px;
+		height: initial;
+	}
+
+	.title-aboutus {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.about-us-content {
+		max-width: 90%;
+		margin: 0 auto;
+		min-height: 430px;
+		position: relative;
+		background-color: $color-5;
+		box-shadow: $shadow-full;
+		display: flex;
+		align-items: center;
+		.about-us-text {
+			padding: 30px 5px;
+			font-size: 20px;
+			img {
+				width: 50px;
+				margin-right: 10px;
+			}
+			p {
+				line-height: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'font-1';
+	src: url(../components/assets/fonts/Vidaloka/Vidaloka-Regular.ttf);
+}
+@font-face {
+	font-family: 'font-2';
+	src: url(../components/assets/fonts/PT_Sans/PTSans-Regular.ttf);
+}
+@font-face {
+	font-family: 'font-3';
+	src: url(../components/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'font-4';
+	src: url(../components/assets/fonts/Parisienne/Parisienne-Regular.ttf);
+}
+
+$font-1: 'font-1', sans-serif;
+$font-2: 'font-2', sans-serif;
+$font-3: 'font-3', sans-serif;
+$font-4: 'font-4', sans-serif;
+
+$color-1: #0073bd;
+$color-2: #e91e63;
+$color-3: #333;
+$color-4: #fafafa;
+$color-5: rgba(250, 250, 250, 0.8);
+$white: rgb(253, 253, 253);
+$shadow: 0 -1px 2px 0 rgba(60, 64, 67, 0.3),
+	2px 2px 4px 1px rgba(60, 64, 67, 0.15);
+$shadow-full: 0px 0px 2px 1px rgba(51, 51, 51, 0.6),
+	8px 8px 1px 0px rgba(13, 71, 161, 0.6),
+	-10px -10px 1px 5px rgba(255, 235, 59, 0.9);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	outline: none;
+	border: none;
+	text-decoration: none;
+
+	&::selection {
+		background: $color-1;
+		color: $color-4;
+	}
+}
+a,
+a:visited {
+	color: $color-3;
+}
+
+i {
+	transition: 0.15s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+body {
+	font-family: $font-2;
+	line-height: 1.4rem;
+	background: $white;
+	color: $color-3;
+	background-color: $color-4;
+}
+
+img {
+	width: 100%;
+}
+
+.color-it {
+	color: #ed1c24;
+	font-weight: bold;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+.success {
+	color: green;
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-fuid {
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'font-1';
+	padding: 20px 0;
+	text-align: center;
+	letter-spacing: 3px;
+	color: $color-2;
+	font-size: 50px;
+	line-height: 40px;
+}
+
+h2 {
+	font-family: 'font-1';
+	padding-bottom: 20px;
+	color: $color-1;
+}
+
+p {
+	line-height: 20px;
+	padding-bottom: 15px;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.btn-classic {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	.button-classic {
+		text-decoration: none;
+		padding: 10px 30px;
+		margin: 10px 5px 0 5px;
+		text-align: center;
+		border-radius: 30px;
+		font-family: $font-1;
+		font-size: 16px;
+		background: $color-2;
+		color: $color-4;
+		border: 1px solid $color-2;
+		cursor: pointer;
+		transition: all 0.4s;
+
+		&:hover {
+			background: $color-4;
+			color: $color-2;
+			border: 1px solid $color-2;
+		}
+	}
+}
+
+#tsparticles {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
+
+.my-name {
+	font-size: 50px;
+	@include xs {
+		font-size: 30px;
+	}
+}
+.my-fristname {
+	color: $color-3;
+	opacity: 0.8;
+}
+.my-lastname {
+	color: $color-1;
+}
+
+.arrow {
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 50px;
+	font-size: 20px;
+	@include xs {
+		display: none;
+	}
+	@include sm {
+		display: none;
+	}
+	@include md {
+		display: none;
+	}
+	.arrow-right {
+		padding: 20px;
+		font-size: 25px;
+	}
+	.arrow-left {
+		padding: 20px;
+		font-size: 25px;
+	}
+}

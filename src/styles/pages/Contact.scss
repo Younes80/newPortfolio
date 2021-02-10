@@ -1,0 +1,245 @@
+.contact-page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	@include xs {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	h1 {
+		padding: 100px 0 100px 0;
+		width: 100%;
+		@include xs {
+			padding: 100px 0 50px 0;
+		}
+	}
+	.info-contact {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background: $color-5;
+		box-shadow: $shadow-full;
+		padding: 20px 30px;
+		max-width: 700px;
+		width: 100%;
+		margin: 0 auto;
+		align-items: center;
+		@include xs {
+			flex-direction: column;
+			width: 90%;
+		}
+		.address {
+			padding-right: 20px;
+			text-align: center;
+			h2 {
+				font-size: 20px;
+				margin-bottom: 0;
+			}
+			p {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			a {
+				&:hover {
+					color: $color-2;
+				}
+			}
+			.icon-social-media {
+				color: $color-1;
+				padding-top: 20px;
+				&:hover {
+					color: $color-2 !important;
+				}
+			}
+			.img-profil {
+				padding-bottom: 20px;
+				text-align: center;
+				img {
+					width: 70%;
+					border-radius: 100%;
+				}
+			}
+		}
+		.formulaire {
+			padding: 0 15px;
+			@include xs {
+				width: 100%;
+			}
+			@include xs {
+				width: 100%;
+			}
+			.contact {
+				position: relative;
+
+				display: grid;
+
+				grid-template-columns: 1fr 0.5fr;
+				grid-template-rows: auto auto auto 1fr;
+				gap: 20px 20px;
+				grid-template-areas:
+					'name company'
+					'email tel'
+					'message message'
+					'btn btn';
+				justify-content: center;
+
+				@include xs {
+					grid-template-columns: 1fr;
+					grid-template-rows: auto;
+					gap: 20px 0px;
+					grid-template-areas:
+						'name'
+						'company'
+						'email'
+						'tel'
+						'message'
+						'btn';
+				}
+				.name {
+					grid-area: name;
+				}
+				.company {
+					grid-area: company;
+				}
+				.email {
+					grid-area: email;
+				}
+				.tel {
+					grid-area: tel;
+				}
+				.message {
+					grid-area: message;
+				}
+				.btn-form {
+					grid-area: btn;
+				}
+				.contact-form {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					label {
+						position: absolute;
+						top: 20px;
+						padding: 10px;
+						pointer-events: none;
+						transition: 0.2s ease-in;
+					}
+					input {
+						padding-left: 10px;
+						font-size: 16px;
+						height: 40px;
+						border-bottom: solid 1px $color-1;
+						margin-top: 20px;
+						transition: 0.2s ease-in;
+					}
+					textarea {
+						border-bottom: solid 1px $color-1;
+						min-height: 150px;
+						margin-top: 30px;
+					}
+					input,
+					textarea {
+						resize: none;
+						font-family: $font-1;
+						background: $color-4;
+					}
+					input,
+					textarea {
+						&:focus {
+							box-shadow: 0 0 4px rgba(0, 22, 44, 0.1);
+						}
+					}
+					textarea:focus ~ label,
+					textarea:not(:placeholder-shown) ~ label,
+					input:focus ~ label,
+					input:not(:placeholder-shown) ~ label {
+						top: -20px;
+						left: 0;
+						color: var(--white-color);
+						font-size: 16px;
+						font-style: italic;
+						transition: 0.2s ease-in;
+					}
+					.button-form {
+						margin: 0 auto;
+						padding: 0px 30px;
+						text-align: center;
+						border-radius: 30px;
+						font-family: $font-1;
+						font-size: 16px;
+						background: $color-2;
+						color: $color-4;
+						border: 1px solid $color-2;
+						cursor: pointer;
+						transition: all 0.4s;
+
+						&:hover {
+							background: $color-4;
+							color: $color-2;
+							border: 1px solid $color-2;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#not-mail {
+	display: none;
+	position: absolute;
+	top: 4px;
+	color: #ff4d4d;
+	right: 0;
+	transform-origin: 50% 50%;
+}
+@keyframes dongle {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	10% {
+		transform: translate(-10px, 0px);
+	}
+	20% {
+		transform: translate(10px, 0px);
+	}
+	30% {
+		transform: translate(-10px, 0px);
+	}
+	40% {
+		transform: translate(10px, 0px);
+	}
+	50% {
+		transform: translate(-10px, 0px);
+	}
+	60% {
+		transform: translate(10px, 0px);
+	}
+	70% {
+		transform: translate(-10px, 0px);
+	}
+	80% {
+		transform: translate(10px, 0px);
+	}
+	90% {
+		transform: translate(-10px, 0px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.form-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	padding: 12px;
+	opacity: 0;
+	transition: 0.2s ease;
+	color: $color-4;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+}

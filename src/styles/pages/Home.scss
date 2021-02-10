@@ -1,0 +1,59 @@
+.container-fluid-home {
+	height: 95vh;
+	display: flex;
+	flex-direction: column;
+
+	.logo-home {
+		position: absolute;
+		height: 80%;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@include xs {
+			width: 100%;
+			margin: 0 auto;
+		}
+		@include sm {
+			width: 100%;
+			margin: 0 auto;
+		}
+		@include md {
+			width: 100%;
+			margin: 0 auto;
+		}
+		img {
+			max-width: 30%;
+
+			@include xs {
+				max-width: 100%;
+			}
+		}
+		h1 {
+			font-size: 25px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			padding: 20px 30px;
+			letter-spacing: 1px;
+			width: 60%;
+			background-color: $color-5;
+			box-shadow: $shadow-full;
+			@include xs {
+				line-height: 30px;
+				width: 90%;
+				margin: 0 auto;
+			}
+			@include sm {
+				width: 90%;
+				margin: 0 auto;
+			}
+			@include md {
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

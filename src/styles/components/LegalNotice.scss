@@ -1,0 +1,45 @@
+.bg-legal-notice {
+	background: $color-4;
+	height: 100vh;
+}
+
+.container-legal-notice {
+	background: $color-4;
+	width: 80%;
+	margin: 0 auto;
+	cursor: default;
+	@include xs {
+		height: 80vh;
+		overflow-y: scroll;
+	}
+	.header-modal {
+		.modal-title {
+			padding-top: 100px;
+			text-align: center;
+			@include xs {
+				font-size: 24px;
+				padding-bottom: 5px;
+			}
+		}
+	}
+	.content-modal {
+		height: 400px;
+		overflow-y: scroll;
+		@include xs {
+			height: initial;
+			overflow-y: initial;
+		}
+		h3 {
+			font-size: 20px !important;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		ul {
+			li {
+				list-style-type: disc;
+				margin-left: 20px;
+			}
+		}
+	}
+}

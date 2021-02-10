@@ -1,0 +1,43 @@
+.footer {
+	position: fixed;
+
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 0 15px;
+	@include xs {
+		background-color: $color-5;
+	}
+	.logo {
+		width: 100px;
+	}
+	.copyright {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		// @include xs {
+		// 	font-size: 1px;
+		// }
+		.heart {
+			font-size: 18px;
+			color: $color-2;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $color-2;
+			}
+		}
+	}
+	.legal-notice {
+		cursor: pointer;
+		&:hover {
+			color: #ed1c24;
+		}
+		@include xs {
+			font-size: 10px;
+		}
+	}
+}

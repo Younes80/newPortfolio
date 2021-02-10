@@ -1,0 +1,12 @@
+.technologies {
+	width: 100%;
+	padding: 30px 0;
+	.list-tech {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		.tech-logo {
+			padding: 10px 15px;
+		}
+	}
+}
