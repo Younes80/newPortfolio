@@ -71,7 +71,7 @@ const AboutUs = () => {
 							<Link to="/contact" className="button-classic">
 								Me contacter
 							</Link>
-							<Link to="/contact" className="button-classic">
+							<Link to="/productions" className="button-classic">
 								Mes réalisations
 							</Link>
 						</div>
