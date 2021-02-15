@@ -597,4 +597,25 @@ export const slides = [
 			"Mon objectif était de m'entrainer sur React et la mise en production et l'authentification utilisateur.",
 		category: 'Code',
 	},
+	{
+		id: '28',
+		title: "Création d'une application météo",
+		text: 'JS / JQuery',
+		detail: (
+			<>
+				<p>Création d'une application web Météo</p>
+				<ul>
+					<li>Utilisation de JS et Jquery</li>
+					<li>Appel API</li>
+				</ul>
+			</>
+		),
+		mockup: 'mockup2_api-meteo.jpg',
+		imgfull: 'img-apiMeteo_fullpage.jpg',
+		imgProducts: 'img-apiMeteo_fullpage.jpg',
+		addressWeb: 'https://apimeteo.younes-haidri.fr',
+		objectif:
+			"Mon objectif était de m'entrainer sur JavaScript, JQuery et appel à une API.",
+		category: 'Code',
+	},
 ];
