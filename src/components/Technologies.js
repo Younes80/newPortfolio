@@ -16,31 +16,31 @@ const Technologies = () => {
 		<div className="technologies">
 			<ul className="list-tech">
 				<li className="tech-logo">
-					<SiHtml5 size="50px" color="#0d47a1" />
+					<SiHtml5 />
 				</li>
 				<li className="tech-logo">
-					<SiSass size="50px" color="#0d47a1" />
+					<SiSass />
 				</li>
 				<li className="tech-logo">
-					<SiJavascript size="50px" color="#0d47a1" />
+					<SiJavascript />
 				</li>
 				<li className="tech-logo">
-					<SiReact size="50px" color="#0d47a1" />
+					<SiReact />
 				</li>
 				<li className="tech-logo">
-					<SiPhp size="50px" color="#0d47a1" />
+					<SiPhp />
 				</li>
 				<li className="tech-logo">
-					<SiNodeDotJs size="50px" color="#0d47a1" />
+					<SiNodeDotJs />
 				</li>
 				<li className="tech-logo">
-					<SiVisualstudiocode size="50px" color="#0d47a1" />
+					<SiVisualstudiocode />
 				</li>
 				<li className="tech-logo">
-					<SiNpm size="50px" color="#0d47a1" />
+					<SiNpm />
 				</li>
 				<li className="tech-logo">
-					<SiWordpress size="50px" color="#0d47a1" />
+					<SiWordpress />
 				</li>
 			</ul>
 		</div>

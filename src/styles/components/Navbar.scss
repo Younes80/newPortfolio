@@ -7,7 +7,7 @@
 			a {
 				color: $color-4;
 				font-size: 24px;
-				cursor: pointer;
+				// cursor: pointer;
 				&:hover {
 					color: #0d47a1;
 					text-decoration: none;
@@ -25,6 +25,10 @@
 	height: 30px;
 	left: 36px;
 	top: 36px;
+
+	#react-burger-menu-btn {
+		cursor: none !important;
+	}
 }
 
 /* Color/shape of burger icon bars */

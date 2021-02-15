@@ -12,19 +12,19 @@ const DesignLogo = () => {
 		<div className="design-logo">
 			<ul className="list-design">
 				<li className="design-logo">
-					<SiAdobephotoshop size="50px" color="#0d47a1" />
+					<SiAdobephotoshop />
 				</li>
 				<li className="design-logo">
-					<SiAdobeillustrator size="50px" color="#0d47a1" />
+					<SiAdobeillustrator />
 				</li>
 				<li className="design-logo">
-					<SiAdobeindesign size="50px" color="#0d47a1" />
+					<SiAdobeindesign />
 				</li>
 				<li className="design-logo">
-					<SiFigma size="50px" color="#0d47a1" />
+					<SiFigma />
 				</li>
 				<li className="design-logo">
-					<SiAdobeaftereffects size="50px" color="#0d47a1" />
+					<SiAdobeaftereffects />
 				</li>
 			</ul>
 		</div>

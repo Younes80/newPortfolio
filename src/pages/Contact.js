@@ -200,13 +200,12 @@ const Contact = () => {
 						</div>
 					</form>
 				</div>
-				<div className="arrow">
-					<Link className="arrow-left" to="/productions">
-						<VscChevronLeft />
-					</Link>
-					<span>SCROLL</span>
-				</div>
 			</motion.div>
+			<div className="arrow btn-classic">
+				<Link className="arrow-left button-classic" to="/productions">
+					<VscChevronLeft />
+				</Link>
+			</div>
 			<Navigation />
 			<Footer />
 		</motion.div>

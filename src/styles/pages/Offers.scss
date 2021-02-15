@@ -1,6 +1,8 @@
 .container-offer {
 	height: 100vh;
+	width: 100%;
 	display: flex;
+
 	flex-direction: column;
 	@include xs {
 		padding-bottom: 100px;
@@ -47,11 +49,13 @@
 				/ auto;
 		}
 		@include sm {
+			width: initial;
 			grid:
 				'offer1' auto
 				/ auto;
 		}
 		@include md {
+			width: initial;
 			grid:
 				'offer1' auto
 				/ auto;

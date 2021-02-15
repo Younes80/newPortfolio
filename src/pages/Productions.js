@@ -46,18 +46,16 @@ const Productions = ({ data }) => {
 						variants={variants}>
 						<Products data={data} />
 					</motion.div>
-
-					<div className="arrow">
-						<Link className="arrow-left" to="/aboutus">
-							<VscChevronLeft />
-						</Link>
-						<span>SCROLL</span>
-						<Link className="arrow-right" to="/contact">
-							<VscChevronRight />
-						</Link>
-					</div>
 				</div>
-				<Navigation />
+			</div>
+			<Navigation />
+			<div className="arrow btn-classic">
+				<Link className="arrow-left button-classic" to="/aboutus">
+					<VscChevronLeft />
+				</Link>
+				<Link className="arrow-right button-classic" to="/contact">
+					<VscChevronRight />
+				</Link>
 			</div>
 			<Footer />
 		</motion.div>

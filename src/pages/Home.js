@@ -56,13 +56,12 @@ const Home = () => {
 					<br />
 					Développeur front-end, webdesigner & intégrateur web&nbsp;!
 				</h1>
-				<div className="arrow">
-					<span>SCROLL</span>
-					<Link className="arrow-right" to="/aboutus">
-						<VscChevronRight />
-					</Link>
-				</div>
 			</motion.div>
+			<div className="arrow btn-classic">
+				<Link className="arrow-right button-classic" to="/aboutus">
+					<VscChevronRight />
+				</Link>
+			</div>
 			<Navigation />
 			<Footer />
 		</motion.div>

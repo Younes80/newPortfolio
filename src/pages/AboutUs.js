@@ -36,60 +36,61 @@ const AboutUs = () => {
 	};
 
 	return (
-		<motion.div
-			className="about-us"
-			key="aboutus"
-			exit="out"
-			animate="in"
-			initial="initial"
-			variants={variants}
-			transition={transition}>
-			<div className="bg-aboutus">
-				<h1 className="title-aboutus">Qui suis-je&nbsp;?</h1>
-			</div>
-			<div className="container">
-				<motion.div
-					className="about-us-content"
-					initial="initial"
-					animate="visible"
-					transition={{ duration: 1 }}
-					variants={elemAnim}>
-					<div className="about-us-text">
-						<p>
-							Autodidacte et touche à tout, j'ai développé des compétences et
-							des qualités complémentaires qui facilitent mon évolution et mon
-							adaptabilité dans n'importe quel environnement.
-						</p>
-						<p>
-							Passionné de nouvelles technologies, j'ai décidé de me spécialiser
-							dans le webdesign et le développement front-end.
-						</p>
-						<p>Les langages et outils que j'utilise&nbsp;:</p>
-						<Technologies />
-						<DesignLogo />
-						<div className="btn-classic">
-							<Link to="/contact" className="button-classic">
-								Me contacter
-							</Link>
-							<Link to="/productions" className="button-classic">
-								Mes réalisations
-							</Link>
+		<>
+			<motion.div
+				className="about-us"
+				key="aboutus"
+				exit="out"
+				animate="in"
+				initial="initial"
+				variants={variants}
+				transition={transition}>
+				<div className="bg-aboutus">
+					<h1 className="title-aboutus">Qui suis-je&nbsp;?</h1>
+				</div>
+				<div className="container">
+					<motion.div
+						className="about-us-content"
+						initial="initial"
+						animate="visible"
+						transition={{ duration: 1 }}
+						variants={elemAnim}>
+						<div className="about-us-text">
+							<p>
+								Autodidacte et touche à tout, j'ai développé des compétences et
+								des qualités complémentaires qui facilitent mon évolution et mon
+								adaptabilité dans n'importe quel environnement.
+							</p>
+							<p>
+								Passionné de nouvelles technologies, j'ai décidé de me
+								spécialiser dans le webdesign et le développement front-end.
+							</p>
+							<p>Les langages et outils que j'utilise&nbsp;:</p>
+							<Technologies />
+							<DesignLogo />
+							<div className="btn-classic">
+								<Link to="/contact" className="button-classic">
+									Me contacter
+								</Link>
+								<Link to="/productions" className="button-classic">
+									Mes réalisations
+								</Link>
+							</div>
 						</div>
-					</div>
-					<div className="arrow">
-						<Link className="arrow-left" to="/">
+					</motion.div>
+					<div className="arrow btn-classic">
+						<Link className="arrow-left button-classic" to="/">
 							<VscChevronLeft />
 						</Link>
-						<span>SCROLL</span>
-						<Link className="arrow-right" to="/productions">
+						<Link className="arrow-right button-classic" to="/productions">
 							<VscChevronRight />
 						</Link>
 					</div>
-				</motion.div>
-			</div>
-			<Navigation />
-			<Footer />
-		</motion.div>
+				</div>
+				<Navigation />
+				<Footer />
+			</motion.div>
+		</>
 	);
 };
 
