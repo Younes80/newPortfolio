@@ -107,6 +107,11 @@
 			}
 			&:hover {
 				transform: scale(1.02);
+				box-shadow: 0 0 2px 1px rgba(51, 51, 51, 0.6),
+					3px 3px 1px 3px rgba(250, 250, 250, 1),
+					10px 10px 1px 5px rgba(13, 71, 161, 0.6),
+					-3px -3px 1px 3px rgba(250, 250, 250, 1),
+					-15px -15px 1px 5px rgba(255, 235, 59, 0.9);
 			}
 			h2 {
 				grid-area: title;
