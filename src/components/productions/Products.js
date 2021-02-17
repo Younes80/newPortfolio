@@ -19,6 +19,7 @@ function Arrow(props) {
 const Products = () => {
 	const [index, setIndex] = useState(0);
 	const data = slides.slides[index];
+	console.log(data.imgProducts);
 
 	// console.log(slides.slides.length);
 	const onArrowClick = direction => {
@@ -70,7 +71,7 @@ const Products = () => {
 						<span>Catégorie : {data.category}</span>
 						<span>Techno : {data.text}</span>
 					</div>
-					<img src={'../img/' + data.mockup} alt={data.imgProducts} />
+					<img src={`../img/${data.mockup}`} alt={data.imgProducts} />
 					<div className="description_projet">{data.detail}</div>
 				</div>
 				<Modal

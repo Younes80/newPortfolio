@@ -618,4 +618,26 @@ export const slides = [
 			"Mon objectif était de m'entrainer sur JavaScript, JQuery et appel à une API.",
 		category: 'Code',
 	},
+	{
+		id: '29',
+		title: "Création d'une page web avec des composants réutilisables",
+		text: 'Reactjs',
+		detail: (
+			<>
+				<p>Création d'une PWA (Progessive Web Application)</p>
+				<ul>
+					<li>Utilisation de Create React App</li>
+					<li>Utilisation de Styled-components</li>
+					<li>Utilisation de HTML5 Drag and Drop API</li>
+				</ul>
+			</>
+		),
+		mockup: 'mockup1_pmb.jpg',
+		imgfull: 'img-pmb_fullpage.jpg',
+		imgProducts: 'img-pmb_fullpage.jpg',
+		addressWeb: 'https://pmb.younes-haidri.fr',
+		objectif:
+			"Mon object était d'apprendre à créer des composants réutilisables et d'intégrer du Drag and Drop",
+		category: 'Code',
+	},
 ];
