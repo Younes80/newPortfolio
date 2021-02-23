@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { VscChevronRight } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 import Mouse from '../components/Mouse';
+// import DynamicText from '../components/DynamicText';
 
 const Home = () => {
 	const variants = {
