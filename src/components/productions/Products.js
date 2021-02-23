@@ -19,7 +19,7 @@ function Arrow(props) {
 const Products = () => {
 	const [index, setIndex] = useState(0);
 	const data = slides.slides[index];
-	console.log(data.imgProducts);
+	// console.log(data.imgProducts);
 
 	// console.log(slides.slides.length);
 	const onArrowClick = direction => {
@@ -68,7 +68,7 @@ const Products = () => {
 					onClick={() => setOpen(true)}>
 					<h2>{data.title}</h2>
 					<div className="techno">
-						<span>Catégorie : {data.category}</span>
+						{/* <span>Catégorie : {data.category}</span> */}
 						<span>Techno : {data.text}</span>
 					</div>
 					<img src={`../img/${data.mockup}`} alt={data.imgProducts} />
@@ -80,18 +80,20 @@ const Products = () => {
 					onClose={() => setOpen(false)}
 					center
 					classNames={{
-						overlay: 'customOverlay',
+						overlay: 'customOverlay hover',
 						modal: 'customModal',
 						overlayAnimationIn: 'customEnterOverlayAnimation',
 						overlayAnimationOut: 'customLeaveOverlayAnimation',
 						modalAnimationIn: 'customEnterModalAnimation',
 						modalAnimationOut: 'customLeaveModalAnimation',
+						closeIcon: 'hover',
+						closeButton: 'hover',
 					}}
 					animationDuration={800}>
 					<div className="modal-offer">
 						<div className="header-modal">
 							<h2 className="modal-title">{data.title}</h2>
-							<span>Catégorie : {data.category}</span>
+							{/* <span>Catégorie : {data.category}</span> */}
 							<span>Techno : {data.text}</span>
 						</div>
 						<hr />

@@ -3,7 +3,7 @@ import logo from '../components/assets/img/logo1.svg';
 
 const Logo = () => {
 	return (
-		<div className="logo-contact">
+		<div className="logo-contact hover">
 			<a href="mailto:younes.haidri@gmail.com">
 				<img src={logo} alt="logo" />
 			</a>

@@ -20,7 +20,7 @@ export const slides = [
 		addressWeb: '',
 		objectif:
 			'Le but était de me faire la main avec les fonctionnalités de Photoshop.',
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '2',
@@ -43,7 +43,7 @@ export const slides = [
 		addressWeb: '',
 		objectif:
 			"L'objectif de cet exercice est l'utilisation de la plume sur Photoshop.",
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '3',
@@ -70,7 +70,7 @@ export const slides = [
 		addressWeb: '',
 		objectif:
 			"La reproduction de ce visuel m'a permis de comprendre l'utilisation des calques de réglage ainsi que les multiples flous sur Photoshop.",
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '4',
@@ -96,7 +96,7 @@ export const slides = [
 		addressWeb: '',
 		objectif:
 			'le but de cet exercice était de maîtriser les outils de Photoshop.',
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '5',
@@ -121,7 +121,7 @@ export const slides = [
 		imgProducts: 'effets-text_page_products.jpg',
 		addressWeb: '',
 		objectif: "L'objectif était l'utilisation des outils Photoshop.",
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '6',
@@ -145,7 +145,7 @@ export const slides = [
 		addressWeb: '',
 		objectif:
 			"L'objectif était de créer un Webdesign (ordi, tablette et mobile) sur photoshop.<br>Seul le logo était imposé.",
-		category: 'Webdesign',
+		category: ['All', 'Webdesign'],
 	},
 	{
 		id: '7',
@@ -169,7 +169,7 @@ export const slides = [
 		addressWeb: 'https://papilles.younes-haidri.fr/',
 		objectif:
 			"L'objectif de la création de ce site était la maîtrise de Bootstrap ainsi que de me familiariser avec les formulaires et les intégrations de vidéo.",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '8',
@@ -188,7 +188,7 @@ export const slides = [
 		imgProducts: 'BlackSilver_page_products.png',
 		addressWeb: '',
 		objectif: "L'objectif était de se familiariser avec html/css.",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '9',
@@ -208,7 +208,7 @@ export const slides = [
 		addressWeb: 'https://lambda.younes-haidri.fr/',
 		objectif:
 			"L'objectif est de montrer une page d'accueil pour un restaurant.",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '10',
@@ -227,7 +227,7 @@ export const slides = [
 		imgProducts: 'Lucid_OnePage_page_products.jpg',
 		addressWeb: 'https://lucid.younes-haidri.fr/',
 		objectif: "L'objectif est de montrer une page d'accueil pour une agence.",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '11',
@@ -248,7 +248,7 @@ export const slides = [
 		imgProducts: 'couvmag.jpg',
 		addressWeb: '',
 		objectif: "L'objectif était de travailler sur InDesign.",
-		category: 'Webdesign',
+		category: ['All', 'Webdesign', 'Design'],
 	},
 	{
 		id: '12',
@@ -275,7 +275,7 @@ export const slides = [
 				Puis de développer le site en html/css."
 			</>
 		),
-		category: 'Code',
+		category: ['All', 'Webdesign', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '13',
@@ -295,7 +295,7 @@ export const slides = [
 		addressWeb: 'https://wattwiller.younes-haidri.fr/',
 		objectif:
 			"L'objectif était de créer la page d'accueil du site avec un webdesign et un temps imposé.",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '14',
@@ -323,7 +323,7 @@ export const slides = [
 		addressWeb: 'https://www.bsconvergence.com',
 		objectif:
 			"Mon objectif pendant le stage était d'optimiser le site de Convergence Business Solutions.<br>J'ai redéfini la charte graphique et épuré le webdesign, j'ai codé le site en HTML / css / js et j'ai utilisé Bootstrap.<br>Le formulaire est sécurisé avec Ajax pour la partie front et PHP pour la partie back. j'ai rajouté reCaptcha v2 de Google. ",
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css', 'JavaScript'],
 	},
 	{
 		id: '15',
@@ -346,7 +346,7 @@ export const slides = [
 		imgProducts: 'img-laplanche_pageproduct.jpg',
 		addressWeb: 'https://boutique.younes-haidri.fr',
 		objectif: 'Mon objectif était de créer un site e-commerce de A à Z.',
-		category: 'Wordpress',
+		category: ['All', 'Wordpress'],
 	},
 	{
 		id: '16',
@@ -368,7 +368,7 @@ export const slides = [
 		imgProducts: 'img-latablede3_pageproduct.jpg',
 		addressWeb: 'https://food.younes-haidri.fr',
 		objectif: 'Mon objectif était de créer un site e-commerce de A à Z.',
-		category: 'Wordpress',
+		category: ['All', 'Wordpress'],
 	},
 	{
 		id: '17',
@@ -390,7 +390,7 @@ export const slides = [
 		imgProducts: 'img-site-burdigala_page_product.jpg',
 		addressWeb: 'https://burdigala.younes-haidri.fr',
 		objectif: 'Mon objectif était de créer un site e-commerce de A à Z.',
-		category: 'Wordpress',
+		category: ['All', 'Wordpress'],
 	},
 	{
 		id: '18',
@@ -409,7 +409,7 @@ export const slides = [
 		imgProducts: 'img-site-rhea_page-products.jpg',
 		addressWeb: 'https://rhea.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '19',
@@ -428,7 +428,7 @@ export const slides = [
 		imgProducts: 'img-bakery_pageproduct.jpg',
 		addressWeb: 'https://bakery.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '20',
@@ -447,7 +447,7 @@ export const slides = [
 		imgProducts: 'img-clean_pageproduct.jpg',
 		addressWeb: 'https://clean.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '21',
@@ -466,7 +466,7 @@ export const slides = [
 		imgProducts: 'img-ecoleducasse_pageproduct.jpg',
 		addressWeb: 'https://ducasse.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '22',
@@ -485,7 +485,7 @@ export const slides = [
 		imgProducts: 'img-farmer_pageproduct.jpg',
 		addressWeb: 'https://farmer.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '23',
@@ -504,7 +504,7 @@ export const slides = [
 		imgProducts: 'img-fudi_pageproduct.jpg',
 		addressWeb: 'https://fudi.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '24',
@@ -523,7 +523,7 @@ export const slides = [
 		imgProducts: 'img-azai_pageproduct.jpg',
 		addressWeb: 'https://azai.younes-haidri.fr/',
 		objectif: 'Mon objectif était de créer une page selon un webdesign.',
-		category: 'Code',
+		category: ['All', 'Intégration', 'Html/css'],
 	},
 	{
 		id: '25',
@@ -539,7 +539,7 @@ export const slides = [
 		imgProducts: 'img-todo_page-product.jpg',
 		addressWeb: 'https://todo.younes-haidri.fr/dist/',
 		objectif: "Mon objectif était de m'entrainer sur du Javascript",
-		category: 'Code',
+		category: ['All', 'JavaScript'],
 	},
 	{
 		id: '26',
@@ -567,7 +567,7 @@ export const slides = [
 		addressWeb: 'https://allomovies.younes-haidri.fr',
 		objectif:
 			"Mon objectif était de m'entrainer sur React et la mise en production.",
-		category: 'Code',
+		category: ['All', 'React.js'],
 	},
 	{
 		id: '27',
@@ -595,7 +595,7 @@ export const slides = [
 		addressWeb: 'https://marvel-quiz.younes-haidri.fr',
 		objectif:
 			"Mon objectif était de m'entrainer sur React et la mise en production et l'authentification utilisateur.",
-		category: 'Code',
+		category: ['All', 'React.js'],
 	},
 	{
 		id: '28',
@@ -616,7 +616,7 @@ export const slides = [
 		addressWeb: 'https://apimeteo.younes-haidri.fr',
 		objectif:
 			"Mon objectif était de m'entrainer sur JavaScript, JQuery et appel à une API.",
-		category: 'Code',
+		category: ['All', 'JavaScript'],
 	},
 	{
 		id: '29',
@@ -638,6 +638,6 @@ export const slides = [
 		addressWeb: 'https://pmb.younes-haidri.fr',
 		objectif:
 			"Mon object était d'apprendre à créer des composants réutilisables et d'intégrer du Drag and Drop",
-		category: 'Code',
+		category: ['All', 'React.js'],
 	},
 ];

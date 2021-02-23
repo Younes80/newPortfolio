@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	// overflow-y: 'auto';
-	cursor: default;
+	cursor: none;
 	.header-modal {
 		display: flex;
 		flex-direction: column;
@@ -71,11 +71,12 @@ hr {
 
 .react-responsive-modal-overlay {
 	background: rgba(255, 235, 59, 0.2) !important;
+	cursor: none;
 }
 
-.react-responsive-modal-container {
-	cursor: pointer;
-}
+// .react-responsive-modal-container {
+// 	cursor: none;
+// }
 
 .customModal {
 	background: $color-4 !important;

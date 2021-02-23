@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Address from '../components/Address';
 import { Link } from 'react-router-dom';
 import { VscChevronLeft } from 'react-icons/vsc';
+import Mouse from '../components/Mouse';
 
 const Contact = () => {
 	const [name, setName] = useState('');
@@ -118,6 +119,7 @@ const Contact = () => {
 			initial="out"
 			variants={variants}
 			transition={transition}>
+			<Mouse />
 			<div className="bg-contact">
 				<h1>Pour me contacter&nbsp;!</h1>
 			</div>
@@ -135,6 +137,7 @@ const Contact = () => {
 							<input
 								type="text"
 								name="name"
+								className="hover"
 								placeholder=" "
 								onChange={e => setName(e.target.value)}
 								value={name}
@@ -146,6 +149,7 @@ const Contact = () => {
 						<div className="company contact-form">
 							<input
 								type="text"
+								className="hover"
 								name="company"
 								placeholder=" "
 								onChange={e => setCompany(e.target.value)}
@@ -158,6 +162,7 @@ const Contact = () => {
 						<div className="email contact-form">
 							<input
 								type="email"
+								className="hover"
 								name="email"
 								placeholder=" "
 								onChange={e => setEmail(e.target.value)}
@@ -171,6 +176,7 @@ const Contact = () => {
 						<div className="tel contact-form">
 							<input
 								type="text"
+								className="hover"
 								name="phone"
 								placeholder=" "
 								onChange={e => setPhone(e.target.value)}
@@ -183,6 +189,7 @@ const Contact = () => {
 						<div className="message contact-form">
 							<textarea
 								name="message"
+								className="hover"
 								placeholder=" "
 								onChange={e => setMessage(e.target.value)}
 								value={message}></textarea>
@@ -192,7 +199,7 @@ const Contact = () => {
 						</div>
 						<div className="btn-form contact-form">
 							<input
-								className="button-form"
+								className="button-form hover"
 								type="button"
 								value="Envoyer"
 								onClick={handleSubmit}
@@ -202,7 +209,7 @@ const Contact = () => {
 				</div>
 			</motion.div>
 			<div className="arrow btn-classic">
-				<Link className="arrow-left button-classic" to="/productions">
+				<Link className="arrow-left button-classic hover" to="/productions">
 					<VscChevronLeft />
 				</Link>
 			</div>

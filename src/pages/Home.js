@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import { VscChevronRight } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
+import Mouse from '../components/Mouse';
 
 const Home = () => {
 	const variants = {
@@ -43,6 +44,7 @@ const Home = () => {
 			initial="initial"
 			variants={variants}
 			transition={transition}>
+			<Mouse />
 			<motion.div
 				className="logo-home"
 				initial="initial"
@@ -58,7 +60,7 @@ const Home = () => {
 				</h1>
 			</motion.div>
 			<div className="arrow btn-classic">
-				<Link className="arrow-right button-classic" to="/aboutus">
+				<Link className="arrow-right button-classic hover" to="/aboutus">
 					<VscChevronRight />
 				</Link>
 			</div>

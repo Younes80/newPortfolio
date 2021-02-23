@@ -13,15 +13,19 @@ const Address = () => {
 				<span className="my-lastname"> HAïDRI</span>
 			</h2>
 			<p>Basé à Bordeaux</p>
-			<a href="mailto:younes.haidri@gmail.com">younes.haidri@gmail.com</a>
+			<a className="hover" href="mailto:younes.haidri@gmail.com">
+				younes.haidri@gmail.com
+			</a>
 			<br />
-			<a href="tel:0615041415">06.15.04.14.15</a>
+			<a className="hover" href="tel:0615041415">
+				06.15.04.14.15
+			</a>
 			<br />
 			<a
 				href="https://www.linkedin.com/in/younes-h-28b86050/"
 				target="_blank"
 				rel="noreferrer">
-				<SiLinkedin className="icon-social-media" size="50px" />
+				<SiLinkedin className="icon-social-media hover" size="50px" />
 			</a>
 		</div>
 	);

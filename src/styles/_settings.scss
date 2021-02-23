@@ -26,6 +26,7 @@ $color-2: #e91e63;
 $color-3: #333;
 $color-4: #fafafa;
 $color-5: rgba(250, 250, 250, 0.8);
+$color-6: #ffeb3b;
 $white: rgb(253, 253, 253);
 $shadow: 0 -1px 2px 0 rgba(60, 64, 67, 0.3),
 	2px 2px 4px 1px rgba(60, 64, 67, 0.15);
@@ -91,45 +92,7 @@ img {
 .App {
 	width: 100vw;
 	height: 100vh;
-	.cursor-perso {
-		width: 30px;
-		height: 30px;
-		border: 1px solid $color-3;
-		border-radius: 50%;
-		position: absolute;
-		pointer-events: none;
-		z-index: 9999;
-		&::before {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 5px;
-			height: 5px;
-			background: $color-1;
-			border-radius: 50%;
-		}
-	}
 }
-
-// .expand {
-// 	animation: Anim2 0.5s;
-// 	background: crimson;
-// 	border: 1px solid crimson;
-// }
-// @keyframes Anim2 {
-// 	0% {
-// 		transform: scale(1);
-// 	}
-// 	50% {
-// 		transform: scale(2);
-// 	}
-// 	100% {
-// 		transform: scale(1);
-// 		opacity: 0;
-// 	}
-// }
 
 .container {
 	max-width: 1200px;
@@ -266,5 +229,67 @@ p {
 			background: $color-4;
 			border: 1px solid $color-1;
 		}
+	}
+}
+
+.cursor {
+	width: 62px;
+	height: 62px;
+	border: 1px solid $color-3;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+	transition: all 0.5s ease;
+	transition-property: background, transform;
+	transition: top 160ms ease-out;
+	transition: left 160ms ease-out;
+	z-index: 9999;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 5px;
+		height: 5px;
+		background: $color-1;
+		border-radius: 50%;
+	}
+}
+.cursor.hovered {
+	width: 30px;
+	height: 30px;
+	transform: translate(50%, 50%);
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 30px;
+		height: 30px;
+		background: $color-1;
+		opacity: 0.3;
+		border-radius: 50%;
+	}
+}
+
+.expand {
+	animation: Anim2 0.5s;
+	background: $color-6;
+	border: none;
+}
+@keyframes Anim2 {
+	0% {
+		transform: scale(1);
+		border: none;
+	}
+	50% {
+		border: none;
+		transform: scale(1.5);
+	}
+	100% {
+		border: none;
+		transform: scale(1);
+		opacity: 0;
 	}
 }

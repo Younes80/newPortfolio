@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Technologies from '../components/Technologies';
 import DesignLogo from '../components/DesignLogo';
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
+import Mouse from '../components/Mouse';
 
 const AboutUs = () => {
 	const variants = {
@@ -37,6 +38,7 @@ const AboutUs = () => {
 
 	return (
 		<>
+			<Mouse />
 			<motion.div
 				className="about-us"
 				key="aboutus"
@@ -69,20 +71,22 @@ const AboutUs = () => {
 							<Technologies />
 							<DesignLogo />
 							<div className="btn-classic">
-								<Link to="/contact" className="button-classic">
+								<Link to="/contact" className="button-classic hover">
 									Me contacter
 								</Link>
-								<Link to="/productions" className="button-classic">
+								<Link to="/productions" className="button-classic hover">
 									Mes réalisations
 								</Link>
 							</div>
 						</div>
 					</motion.div>
 					<div className="arrow btn-classic">
-						<Link className="arrow-left button-classic" to="/">
+						<Link className="arrow-left button-classic hover" to="/">
 							<VscChevronLeft />
 						</Link>
-						<Link className="arrow-right button-classic" to="/productions">
+						<Link
+							className="arrow-right button-classic hover"
+							to="/productions">
 							<VscChevronRight />
 						</Link>
 					</div>
