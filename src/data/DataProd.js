@@ -321,8 +321,18 @@ export const slides = [
 		imgfull: 'cbs.jpg',
 		imgProducts: 'cbs_page_product.jpg',
 		addressWeb: 'https://www.bsconvergence.com',
-		objectif:
-			"Mon objectif pendant le stage était d'optimiser le site de Convergence Business Solutions.<br>J'ai redéfini la charte graphique et épuré le webdesign, j'ai codé le site en HTML / css / js et j'ai utilisé Bootstrap.<br>Le formulaire est sécurisé avec Ajax pour la partie front et PHP pour la partie back. j'ai rajouté reCaptcha v2 de Google. ",
+		objectif: (
+			<>
+				Mon objectif pendant le stage était d'optimiser le site de Convergence
+				Business Solutions.
+				<br />
+				J'ai redéfini la charte graphique et épuré le webdesign, j'ai codé le
+				site en HTML / css / js et j'ai utilisé Bootstrap.
+				<br />
+				Le formulaire est sécurisé avec Ajax pour la partie front et PHP pour la
+				partie back. j'ai rajouté reCaptcha v2 de Google.
+			</>
+		),
 		category: ['All', 'Intégration', 'Html/css', 'JavaScript'],
 	},
 	{

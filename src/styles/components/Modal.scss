@@ -27,12 +27,14 @@
 
 		img {
 			display: flex;
-			width: 50%;
+			width: 100%;
 			margin: 15px auto;
+			// border-radius: 20px;
+			box-shadow: $shadow-full;
 		}
-		p {
-			line-height: 30px;
-		}
+		// p {
+		// 	line-height: 30px;
+		// }
 		.show-website {
 			margin: 10px 0;
 		}

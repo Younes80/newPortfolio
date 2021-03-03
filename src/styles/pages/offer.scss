@@ -1,0 +1,144 @@
+.container-offer {
+	height: initial;
+	width: 100%;
+	display: flex;
+	padding-top: 100px;
+	flex-direction: column;
+
+	@include xs {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include sm {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	@include md {
+		padding-bottom: 100px;
+		height: initial;
+	}
+	h1 {
+		padding: 0px 0 100px 0;
+		@include xs {
+			padding: 0px 0 50px 0;
+		}
+		@include sm {
+			padding: 0px 0 50px 0;
+		}
+		@include md {
+			padding: 0px 0 50px 0;
+		}
+	}
+	.offers {
+		max-width: 80%;
+		margin: 0 auto;
+		position: relative;
+		display: flex;
+
+		.offer1 {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+
+			.offer {
+				position: relative;
+				width: 300px;
+				margin: 20px;
+				overflow: hidden;
+				background-color: $color-5;
+				box-shadow: $shadow-full;
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto auto 1fr;
+				grid-template-areas:
+					'img'
+					'title'
+					'techno'
+					'text';
+				align-items: center;
+				transition: all 0.5s;
+				@include xs {
+					width: initial;
+					max-width: 100%;
+					margin: 0 15px;
+					grid-template-columns: auto;
+					grid-template-areas:
+						'img'
+						'title'
+						'techno'
+						'text';
+					gap: 0px 0px;
+				}
+				@include sm {
+					width: initial;
+					max-width: 100%;
+					margin: 0 15px;
+					grid-template-columns: auto;
+					grid-template-areas:
+						'img'
+						'title'
+						'techno'
+						'text';
+					gap: 0px 0px;
+				}
+				@include md {
+					width: initial;
+					max-width: 100%;
+					margin: 0 15px;
+				}
+				&:hover {
+					transform: scale(1.02);
+					box-shadow: 0 0 2px 1px rgba(51, 51, 51, 0.6),
+						3px 3px 1px 3px rgba(250, 250, 250, 1),
+						10px 10px 1px 5px rgba(13, 71, 161, 0.6),
+						-3px -3px 1px 3px rgba(250, 250, 250, 1),
+						-15px -15px 1px 5px rgba(255, 235, 59, 0.9);
+				}
+				h2 {
+					grid-area: title;
+					text-align: center;
+					align-self: center;
+					padding-top: 25px;
+					padding-bottom: 0;
+					line-height: 30px;
+				}
+				.techno {
+					grid-area: techno;
+					text-align: center;
+					align-self: center;
+					font-style: italic;
+					font-size: 14px;
+					padding-left: 25px;
+					display: flex;
+					flex-direction: column;
+				}
+				img {
+					grid-area: img;
+					width: 100%;
+					margin: 0 auto;
+				}
+				.description_projet {
+					grid-area: text;
+					display: flex;
+					flex-direction: column;
+					padding-left: 25px;
+					margin: 10px;
+					ul {
+						list-style: none;
+						padding-left: 15px;
+						position: relative;
+						li::before {
+							content: '\2022';
+							color: $color-2;
+							font-size: 25px;
+							display: inline-block;
+							width: 10px;
+							position: absolute;
+							left: -2%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

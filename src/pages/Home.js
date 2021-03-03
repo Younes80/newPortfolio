@@ -55,7 +55,7 @@ const Home = () => {
 				<img src={logo} alt="logo" />
 				<h1>
 					<span className="my-name my-fristname">Younes</span>
-					<span className="my-name my-lastname"> HAïDRI</span>
+					<span className="my-name my-lastname"> HAÏDRI</span>
 					<br />
 					Développeur front-end, webdesigner & intégrateur web&nbsp;!
 				</h1>

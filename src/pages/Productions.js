@@ -9,9 +9,8 @@ import Mouse from '../components/Mouse';
 // import { slides } from '../data/DataProd';
 
 const Productions = ({ data }) => {
-	// const [filter, setFilter] = useState('all');
+	// const [filter, setFilter] = useState('All');
 	// const [projects, setProjects] = useState([]);
-
 	// useEffect(() => {
 	// 	setProjects(slides);
 	// }, []);
@@ -22,7 +21,9 @@ const Productions = ({ data }) => {
 	// 		...p,
 	// 		filtered: p.category.includes(filter),
 	// 	}));
+
 	// 	setProjects(filtered);
+	// 	console.log(filtered[0].id);
 	// }, [filter]);
 
 	const variants = {
@@ -59,8 +60,8 @@ const Productions = ({ data }) => {
 				{/* <div className="portfolio__labels">
 					<a
 						href="/productions"
-						active={filter === 'all'}
-						onClick={() => setFilter('all')}>
+						active={filter === 'All'}
+						onClick={() => setFilter('All')}>
 						Tout
 					</a>
 					<a
@@ -97,7 +98,7 @@ const Productions = ({ data }) => {
 						variants={variants}>
 						{/* {projects.map(item =>
 							item.filtered === true ? (
-								<Products key={item.id} data={data} />
+								<Product key={item.id} data={data} />
 							) : (
 								''
 							)

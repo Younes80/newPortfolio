@@ -44,7 +44,6 @@ body {
 	border: none;
 	text-decoration: none;
 	cursor: none;
-
 	&::selection {
 		background: $color-1;
 		color: $color-4;
@@ -64,7 +63,7 @@ i {
 }
 body {
 	width: 100vw;
-	height: 100vh;
+
 	font-family: $font-2;
 	line-height: 1.4rem;
 	background: $white;
@@ -285,6 +284,7 @@ p {
 	animation: Anim2 0.5s;
 	background: $color-6;
 	border: none;
+	transform: translate(50%, 50%);
 }
 @keyframes Anim2 {
 	0% {
