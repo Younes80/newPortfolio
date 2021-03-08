@@ -43,6 +43,7 @@ body {
 	outline: none;
 	border: none;
 	text-decoration: none;
+	transition: background 0.8s;
 	cursor: none;
 	&::selection {
 		background: $color-1;
@@ -63,12 +64,12 @@ i {
 }
 body {
 	width: 100vw;
-
 	font-family: $font-2;
 	line-height: 1.4rem;
 	background: $white;
 	color: $color-3;
 	background-color: $color-4;
+
 	overflow: hidden;
 	@include xs {
 		overflow: initial;
