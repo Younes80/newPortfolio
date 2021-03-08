@@ -58,9 +58,9 @@
 	}
 	.container-fluid-home .logo-home h1 {
 		background-color: rgba(0, 0, 0, 0.8);
-		.my-fristname {
-			color: $color-4;
-		}
+	}
+	.my-fristname {
+		color: $color-4;
 	}
 	.about-us .about-us-content {
 		background-color: rgba(0, 0, 0, 0.8);
@@ -72,10 +72,16 @@
 	.contact-page .info-contact {
 		background-color: rgba(0, 0, 0, 0.8);
 	}
-	.contact-page .info-contact .formulaire .contact .contact-form input,
+	.contact-page
+		.info-contact
+		.formulaire
+		.contact
+		.contact-form
+		input:not(:last-child),
 	.contact-page .info-contact .formulaire .contact .contact-form textarea {
 		background-color: rgba(0, 0, 0, 1);
 	}
+
 	.cursor {
 		border: 1px solid $color-4;
 	}

@@ -6,13 +6,11 @@ import Home from '../../pages/Home';
 import Productions from '../../pages/Productions';
 import { AnimatePresence } from 'framer-motion';
 import DarkMode from '../DarkMode';
-import Navigation from '../navigation/Navigation';
 import Footer from '../Footer';
 
 const Routes = () => {
 	return (
 		<>
-			<Navigation />
 			<AnimatePresence>
 				<Switch>
 					<Route path="/" exact component={Home} />
