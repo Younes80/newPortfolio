@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from '../components/assets/img/logo1.svg';
-import Navigation from '../components/navigation/Navigation';
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import { VscChevronRight } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 import Mouse from '../components/Mouse';
@@ -65,8 +63,6 @@ const Home = () => {
 					<VscChevronRight />
 				</Link>
 			</div>
-			<Navigation />
-			<Footer />
 		</motion.div>
 	);
 };

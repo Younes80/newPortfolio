@@ -1,7 +1,5 @@
 import React from 'react';
-import Navigation from '../components/navigation/Navigation';
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import { VscChevronLeft, VscChevronRight } from 'react-icons/vsc';
 import Products from '../components/productions/Products';
@@ -107,7 +105,6 @@ const Productions = ({ data }) => {
 					</motion.div>
 				</div>
 			</div>
-			<Navigation />
 			<div className="arrow btn-classic">
 				<Link className="arrow-left button-classic hover" to="/aboutus">
 					<VscChevronLeft />
@@ -116,7 +113,6 @@ const Productions = ({ data }) => {
 					<VscChevronRight />
 				</Link>
 			</div>
-			<Footer />
 		</motion.div>
 	);
 };

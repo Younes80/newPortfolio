@@ -5,6 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 const Navigation = () => {
 	return (
 		<Menu
+			key="navigation"
 			burgerButtonClassName={'hover'}
 			crossButtonClassName={'hover'}
 			className="navbar-container">

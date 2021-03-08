@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Navigation from '../components/navigation/Navigation';
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import Address from '../components/Address';
 import { Link } from 'react-router-dom';
 import { VscChevronLeft } from 'react-icons/vsc';
@@ -213,8 +211,6 @@ const Contact = () => {
 					<VscChevronLeft />
 				</Link>
 			</div>
-			<Navigation />
-			<Footer />
 		</motion.div>
 	);
 };

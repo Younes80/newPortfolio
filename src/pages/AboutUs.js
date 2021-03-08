@@ -1,7 +1,5 @@
 import React from 'react';
-import Navigation from '../components/navigation/Navigation';
 import { motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import Technologies from '../components/Technologies';
 import DesignLogo from '../components/DesignLogo';
@@ -91,8 +89,6 @@ const AboutUs = () => {
 						</Link>
 					</div>
 				</div>
-				<Navigation />
-				<Footer />
 			</motion.div>
 		</>
 	);
