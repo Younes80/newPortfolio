@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiLinkedin } from 'react-icons/si';
+import { SiLinkedin, SiGithub } from 'react-icons/si';
 import Profil from '../components/assets/img/Profil.jpg';
 
 const Address = () => {
@@ -26,6 +26,9 @@ const Address = () => {
 				target="_blank"
 				rel="noreferrer">
 				<SiLinkedin className="icon-social-media hover" size="50px" />
+			</a>
+			<a href="https://github.com/Younes80" target="_blank" rel="noreferrer">
+				<SiGithub className="icon-social-media hover" size="50px" />
 			</a>
 		</div>
 	);

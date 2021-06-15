@@ -8,5 +8,9 @@
 		justify-content: space-evenly;
 		color: $color-1;
 		font-size: 50px;
+		.title {
+			font-size: 16px;
+			text-align: center;
+		}
 	}
 }

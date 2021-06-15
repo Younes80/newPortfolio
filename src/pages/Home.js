@@ -54,8 +54,7 @@ const Home = () => {
 				<h1>
 					<span className="my-name my-fristname">Younes</span>
 					<span className="my-name my-lastname"> HAÏDRI</span>
-					<br />
-					Développeur front-end, webdesigner & intégrateur web&nbsp;!
+					<p>Concepteur développeur d'application</p>
 				</h1>
 			</motion.div>
 			<div className="arrow btn-classic">

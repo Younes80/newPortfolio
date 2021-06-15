@@ -34,24 +34,31 @@
 		h1 {
 			font-size: 25px;
 			font-weight: 300;
-			line-height: 40px;
 			text-align: center;
 			padding: 20px 30px;
 			letter-spacing: 1px;
 			width: 60%;
 			background-color: $color-5;
 			box-shadow: $shadow-full;
-			@include xs {
+			span {
+				line-height: 60px;
+			}
+			p {
 				line-height: 30px;
+			}
+			@include xs {
+				padding: 20px 0;
 				width: 90%;
 				margin: 0 auto;
 			}
 			@include sm {
 				width: 90%;
+				padding: 20px 0;
 				margin: 0 auto;
 			}
 			@include md {
 				width: 90%;
+				padding: 20px 0;
 				margin: 0 auto;
 			}
 		}

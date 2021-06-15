@@ -63,11 +63,11 @@ const AboutUs = () => {
 							</p>
 							<p>
 								Passionné de nouvelles technologies, j'ai décidé de me
-								spécialiser dans le webdesign et le développement front-end.
+								spécialiser dans le développement front-end.
 							</p>
 							<p>Les langages et outils que j'utilise&nbsp;:</p>
 							<Technologies />
-							<DesignLogo />
+							{/* <DesignLogo /> */}
 							<div className="btn-classic">
 								<Link to="/contact" className="button-classic hover">
 									Me contacter
