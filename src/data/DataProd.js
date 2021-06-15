@@ -650,4 +650,28 @@ export const slides = [
 			"Mon object était d'apprendre à créer des composants réutilisables et d'intégrer du Drag and Drop",
 		category: ['All', 'React.js'],
 	},
+	{
+		id: '30',
+		title: 'TODO List, Tchat, et appel API',
+		text: 'PHP, JS',
+		detail: (
+			<>
+				<p>
+					Création de la célèbre TODO List avec un tchat intégré et appel API
+				</p>
+				<ul>
+					<li>Architecture MVC</li>
+					<li>Utilisation de la BDD</li>
+					<li>Appel API</li>
+					<li>Connexion utilisateurs</li>
+				</ul>
+			</>
+		),
+		mockup: 'mockup2_todophp.jpg',
+		imgfull: 'img-todophp_fullpage.jpg',
+		imgProducts: 'img-todophp_fullpage.jpg',
+		addressWeb: 'https://todophp.younes-haidri.fr',
+		objectif: 'Mon object était de manipuler la base de données et les API.',
+		category: ['All', 'PHP', 'Javascript'],
+	},
 ];
